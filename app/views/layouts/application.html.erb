@@ -5,13 +5,16 @@
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 <%= csrf_meta_tags %>
+<link href='http://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <% if signed_in? %>
   <%= link_to "Sign out", session_path, method: :delete %>
   <%= link_to "New post", new_post_path %>
 <% end %>
-<%= yield %>
-
+<div class="main-content">
+  <%= yield %>
+</div>
 </body>
 </html>
