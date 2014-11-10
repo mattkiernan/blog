@@ -1,0 +1,50 @@
+.main-content{
+  margin: 0 150px 0 150px;
+}
+
+.header{
+  h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Syncopate', sans-serif;
+  letter-spacing: 10px;
+  }
+
+  hr{
+  text-align: left;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  a{
+   text-decoration:none; 
+   color: #333333;
+  }
+}
+
+
+  a{
+   text-decoration:none;
+  }
+
+  hr{
+    text-align: left;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+ .post-description{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #333333;
+  }
+ 
+  .post-title{
+    text-transform: uppercase; 
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+  }

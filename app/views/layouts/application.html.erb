@@ -9,16 +9,16 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<% if signed_in? %>
-  <%= link_to "Sign out", session_path, method: :delete %>
-  <%= link_to "New post", new_post_path %>
-<% end %>
-<div class="main-content">
-  <div class="header">
-    <h1>Kiernan</h1>
-    <hr>
+  <% if signed_in? %>
+    <%= link_to "Sign out", session_path, method: :delete %>
+    <%= link_to "New post", new_post_path %>
+  <% end %>
+  <div class="main-content">
+    <div class="header">
+      <h1><%= link_to "Kiernan", root_path %></h1>
+      <hr>
+    </div>
+    <%= yield %>
   </div>
-  <%= yield %>
-</div>
 </body>
 </html>
