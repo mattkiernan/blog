@@ -7,6 +7,7 @@
 <%= csrf_meta_tags %>
 <link href='http://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <% if signed_in? %>
@@ -20,5 +21,14 @@
     </div>
     <%= yield %>
   </div>
+  <footer>
+    <ul>
+      <li>About</li>
+      <li>|</li>
+      <li>Contact</li>
+      <li>|</li>
+      <li>GitHub</li>
+    </ul>
+  </footer>
 </body>
 </html>
