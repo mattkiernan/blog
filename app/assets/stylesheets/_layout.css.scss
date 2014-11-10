@@ -4,29 +4,10 @@
 
 .header{
   h1{
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Syncopate', sans-serif;
-  letter-spacing: 10px;
-  }
-
-  hr{
-  text-align: left;
-  border: 0;
-  height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  }
-
-  a{
-   text-decoration:none; 
-   color: #333333;
-  }
-}
-
-
-  a{
-   text-decoration:none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Syncopate', sans-serif;
+    letter-spacing: 10px;
   }
 
   hr{
@@ -37,46 +18,72 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 
- .post-description, .post-body{
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
+  a{
+    text-decoration:none; 
     color: #333333;
   }
- 
-  .post-title{
-    text-transform: uppercase; 
-    font-family: 'Open Sans', sans-serif;
-    color: #96281B;
+}
+
+
+a{
+  text-decoration:none;
+}
+
+hr{
+  text-align: left;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.post-description, .post-body{
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: #333333;
+}
+
+.post-title{
+  text-transform: uppercase; 
+  font-family: 'Open Sans', sans-serif;
+  color: #96281B;
+}
+
+blockquote{
+  padding: 20px;
+  color:#2574A9;
+  background-color:#ffffff;
+  font-family: 'Ubuntu Mono';
+  -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+
+html{
+  padding:0px;
+  margin:0px;
+  height: 100%;
+}
+
+body{
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+footer{
+  background-color:#333333; 
+  position: fixed;;
+  bottom: 0;
+  width: 100%;
+
+  ul{
+    text-align: center; 
   }
 
-  blockquote{
-    padding: 20px;
-    color:#2574A9;
-    background-color:#ffffff;
-    font-family: 'Ubuntu Mono';
-    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
-    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
+  li{
+    display: inline-block;
+    color: #ffffff;
+    font-family: 'Syncopate', sans-serif;
   }
-
-  body{
-    padding:0px;
-    margin:0px;
-  }
-
-  footer{
-   background-color:#333333; 
-   padding-bottom:20px;
-   padding-top:20px;
-   margin-top:50px;
-
-   ul{
-     text-align: center; 
-   }
-
-   li{
-     display: inline-block;
-     color: #ffffff;
-     font-family: 'Syncopate', sans-serif;
-   }
-  }
+}
