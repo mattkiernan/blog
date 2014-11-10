@@ -4,4 +4,8 @@ Rails.application.routes.draw do
   root "posts#index"
 
   resources :posts
+
+  resources :pages, only: [:new, :create]
+
+  get "pages/:permalink", to: "pages#show", as: "page"
 end

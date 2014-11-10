@@ -37,13 +37,13 @@ hr{
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.post-description, .post-body{
+.post-description, .post-body, .page-content{
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
   color: #333333;
 }
 
-.post-title{
+.post-title, .page-title{
   text-transform: uppercase; 
   font-family: 'Open Sans', sans-serif;
   color: #96281B;
@@ -81,7 +81,7 @@ footer{
     text-align: center; 
   }
 
-  li{
+  li, a{
     display: inline-block;
     color: #ffffff;
     font-family: 'Syncopate', sans-serif;

@@ -23,11 +23,11 @@
   </div>
   <footer>
     <ul>
-      <li>About</li>
+      <li><%= link_to "About", page_path(:about) %></li>
       <li>|</li>
-      <li>Contact</li>
+      <li><%= link_to "Contact", page_path(:contact) %></li>
       <li>|</li>
-      <li>GitHub</li>
+      <li><%= link_to "GitHub", "http://www.github.com/mattkiernan", :target => "_blank" %></li>
     </ul>
   </footer>
 </div>

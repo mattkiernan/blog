@@ -1,0 +1,15 @@
+<%= form_for page do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.label :permalink %>
+    <%= form.text_field :permalink %>
+  </div>
+  <div>
+    <%= form.label :content %>
+    <%= form.text_area :content %>
+  </div>
+  <%= form.submit %>
+<% end %>
