@@ -1,15 +1,12 @@
 <%= form_for page do |form| %>
   <div>
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, :class => "form_title", :placeholder => "Name"  %>
   </div>
   <div>
-    <%= form.label :permalink %>
-    <%= form.text_field :permalink %>
+    <%= form.text_field :permalink, :class => "form_permalink", :placeholder => "Permalink" %>
   </div>
   <div>
-    <%= form.label :content %>
-    <%= form.text_area :content %>
+    <%= form.text_area :content, :class => "form_body", :placeholder => "Body" %>
   </div>
-  <%= form.submit %>
+  <%= form.submit :class => "submit_button" %>
 <% end %>

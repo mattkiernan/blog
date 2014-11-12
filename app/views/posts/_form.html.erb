@@ -1,17 +1,14 @@
 <%= form_for post do |form| %>
-  <div>
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+  <div class="form-title">
+    <%= form.text_field :title, :class => "form_title", :placeholder => "Title" %>
   </div>
-  <div>
-    <%= form.label :description %>
-    <%= form.text_field :description %>
+  <div class="form-description">
+    <%= form.text_field :description, :class => "form_description", :placeholder => "Description" %>
   </div>
-  <div>
-    <%= form.label :body %>
-    <%= form.text_area :body %>
+  <div class="form-body">
+    <%= form.text_area :body, :class => "form_body", :placeholder => "Body" %>
   </div>
-  <div>
-    <%= form.submit %>
+  <div class="submit-button">
+    <%= form.submit "Submit", :class => "submit_button" %>
   </div>
 <% end %>

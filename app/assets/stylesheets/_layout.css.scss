@@ -87,3 +87,37 @@ footer{
     font-family: 'Syncopate', sans-serif;
   }
 }
+
+.admin-controls{
+  background-color:#22313F;
+ li, a{
+   display: inline-block; 
+   padding: 10px;
+   font-family: 'Ubuntu Mono';
+   color: #ffffff;
+ } 
+}
+
+form{
+  font-family: 'Open Sans', sans-serif;
+    .form_title, .form_description, .form_permalink{
+      width: 100%;
+      height: 20px;
+      font-size: 16px;
+      margin-bottom: 10px;
+  }
+  .form_body{
+    height: 400px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .submit_button{
+    background-color:#22313F;
+    width: 100%;
+    height: 30px;
+    color: #ffffff;
+    border: 0px;
+    
+  }
+}

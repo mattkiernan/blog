@@ -8,11 +8,17 @@
 <link href='http://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
   <% if signed_in? %>
-    <%= link_to "Sign out", session_path, method: :delete %>
-    <%= link_to "New post", new_post_path %>
+    <div class="admin-controls">
+      <ul>
+        <li><%= link_to "Sign out", session_path, method: :delete %></li>
+        <li><%= link_to "New post", new_post_path %></li>
+        <li><%= link_to "New page", new_page_path %></li>
+      </ul>
+    </div>
   <% end %>
   <div class="main-content">
     <div class="header">
