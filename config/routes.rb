@@ -5,7 +5,9 @@ Rails.application.routes.draw do
 
   resources :posts
 
-  resources :pages, only: [:new, :create]
+  resource :portfolio, only: [:show]
+
+  resource :about, only: [:show]
 
   get "pages/:permalink", to: "pages#show", as: "page"
 end

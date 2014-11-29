@@ -1,123 +1,44 @@
-.main-content{
-  margin: 0 150px 0 150px;
+body{
+  margin: 0;
+  padding: 0;
 }
 
 .header{
-  h1{
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Syncopate', sans-serif;
-    letter-spacing: 10px;
-  }
-
-  hr{
-    text-align: left;
-    border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  }
-
-  a{
-    text-decoration:none; 
-    color: #333333;
-  }
-}
-
-
-a{
-  text-decoration:none;
-}
-
-hr{
-  text-align: left;
-  border: 0;
-  height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.post-description, .post-body, .page-content{
-  font-family: 'Open Sans', sans-serif;
-  text-decoration: none;
-  color: #333333;
-}
-
-.post-title, .page-title{
-  text-transform: uppercase; 
-  font-family: 'Open Sans', sans-serif;
-  color: #96281B;
-}
-
-blockquote{
+  font-size: 20px;
+  letter-spacing: 40px;
+  margin-right: -40px;
   padding: 20px;
-  color:#2574A9;
-  background-color:#ffffff;
-  font-family: 'Ubuntu Mono';
-  -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
-  -moz-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
-  box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
+  text-align: center;
+  text-transform: uppercase;
+  a{
+    color: $dark-gray;
+  };
+};
+
+.hero{
+  font-size: 20px;
+  color: $dark-gray;
+  padding: 0px 8px 0px 8px;
+  margin-bottom: 20px;
+};
+
+.page-content{
+  @include outer-container;
 }
 
-html{
-  padding:0px;
-  margin:0px;
-  height: 100%;
-}
-
-body{
-  min-height: 100%;
-  margin: 0px;
-  padding: 0px;
-}
-
-footer{
-  background-color:#333333; 
-  position: fixed;;
-  bottom: 0;
-  width: 100%;
-
-  ul{
-    text-align: center; 
-  }
-
-  li, a{
-    display: inline-block;
-    color: #ffffff;
-    font-family: 'Syncopate', sans-serif;
-  }
+.about{
+  font-size: 20px;
+  padding: 0px 8px 0px 8px;
+  height: 600px;
 }
 
 .admin-controls{
-  background-color:#22313F;
- li, a{
-   display: inline-block; 
-   padding: 10px;
-   font-family: 'Ubuntu Mono';
-   color: #ffffff;
- } 
-}
-
-form{
-  font-family: 'Open Sans', sans-serif;
-    .form_title, .form_description, .form_permalink{
-      width: 100%;
-      height: 20px;
-      font-size: 16px;
-      margin-bottom: 10px;
-  }
-  .form_body{
-    height: 400px;
-    width: 100%;
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  .submit_button{
-    background-color:#22313F;
-    width: 100%;
-    height: 30px;
-    color: #ffffff;
-    border: 0px;
-    
-  }
-}
+  background-color: $blue;
+  ul li{
+    display: inline;
+    a{
+      color: #ffffff;
+      padding: 0 10px;
+    };
+  };
+};

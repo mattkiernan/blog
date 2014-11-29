@@ -11,31 +11,27 @@
 
 </head>
 <body>
-  <% if signed_in? %>
-    <div class="admin-controls">
-      <ul>
-        <li><%= link_to "Sign out", session_path, method: :delete %></li>
-        <li><%= link_to "New post", new_post_path %></li>
-        <li><%= link_to "New page", new_page_path %></li>
-      </ul>
-    </div>
+<% if signed_in? %>
+  <div class="admin-controls">
+  <ul>
+    <li><%= link_to "Sign out", session_path, method: :delete %></li>
+    <li><%= link_to "New post", new_post_path %></li>
+  </ul>
+</div>
   <% end %>
-  <div class="main-content">
+<div class="page-content">
+  <div>
     <div class="header">
       <h1><%= link_to "Kiernan", root_path %></h1>
-      <hr>
+    </div>
+    <div class="navigation">
+      <%= render "layouts/navigation" %>
     </div>
     <%= yield %>
   </div>
-  <footer>
-    <ul>
-      <li><%= link_to "About", page_path(:about) %></li>
-      <li>|</li>
-      <li><%= link_to "Contact", page_path(:contact) %></li>
-      <li>|</li>
-      <li><%= link_to "GitHub", "http://www.github.com/mattkiernan", :target => "_blank" %></li>
-    </ul>
-  </footer>
 </div>
+<footer>
+  <%= render "refills/footer" %>
+</footer>
 </body>
 </html>

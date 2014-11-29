@@ -12,3 +12,6 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'rails_12factor', group: :production
 gem 'pg'
+gem 'bitters'
+gem 'neat'
+gem 'refills'
