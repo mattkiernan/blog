@@ -9,5 +9,6 @@ Rails.application.routes.draw do
 
   resource :about, only: [:show]
 
-  get "pages/:permalink", to: "pages#show", as: "page"
+  resource :resume, only: [:show]
+
 end

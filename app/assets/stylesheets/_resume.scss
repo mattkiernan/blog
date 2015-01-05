@@ -1,0 +1,49 @@
+.resume{
+  @include span-columns(11);
+  font-size: 18px;
+}
+
+table tr td{
+  border: 0px;
+  margin: 0 0 0 0;
+  padding: 0px;
+  vertical-align: top;
+  .section-header{
+    font-weight: bold;
+    padding: 0;
+    margin: 0 0 20px 0;
+    .company{
+      float: left;
+      padding: 0;
+    }
+    .date{
+      float: right;
+      padding: 0;
+    }
+  }
+}
+
+.desription{
+  width: 20%;
+}
+
+.content{
+  border-left: 1px solid;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  width: 80%;
+  ul li{
+    list-style-type: circle;
+    margin-left: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+.spacer{
+  height: 30px;
+}
+
+.contact p{
+  padding: 0;
+  margin: 0;
+}
