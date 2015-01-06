@@ -39,6 +39,15 @@ table tr td{
   }
 }
 
+.contact{
+  padding-left: 20px;
+  padding-bottom: 20px;
+  width: 80%;
+  ul li{
+    display: inline;
+  }
+}
+
 .spacer{
   height: 30px;
 }
@@ -46,4 +55,24 @@ table tr td{
 .contact p{
   padding: 0;
   margin: 0;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+h1{
+  display: inline;
+}
+
+.project{
+  text-decoration: underline;
+}
+
+.title{
+  letter-spacing: 5px;
+}
+
+.sub-title{
+  letter-spacing: 5px;
 }

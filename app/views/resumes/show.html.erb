@@ -2,15 +2,22 @@
   <table>
     <tr class="section">
       <td class="description">
+      </td>
+      <td class="contact">
+        <h1 class="title">MATT KIERNAN</h1>
+        <p class="sub-title">Web Developer</p>
+      </td>
+    </tr>
+    <tr class="section">
+      <td class="description">
         <h6>Contact</h6>
       </td>
       <td class="content contact">
-        <p>Matt Kiernan</p>
-        <p><%= mail_to "matt.kiernan@gmail.com", "matt.kiernan@gmail.com",
+        <p>Email: <%= mail_to "matt.kiernan@gmail.com", "matt.kiernan@gmail.com",
           target: "_blank" %></p>
-          <p><%= link_to "mattkiernan.com", "http://www.mattkiernan.com",
+          <p>Website: <%= link_to "mattkiernan.com", "http://www.mattkiernan.com",
           target: "_blank" %></p>
-          <p><%= link_to "github.com/mattkiernan",
+          <p>GitHub: <%= link_to "github.com/mattkiernan",
             "http://www.github.com/mattkiernan", target: "_blank" %></p>
       </td>
     </tr>
@@ -22,16 +29,46 @@
         <h6>Summary</h6>
       </td>
       <td class="content">
-        <p>Full stack web developer with deep experience in business analytics
-        and marketing strategy.</p>
-
-        <p>Recent graduate of <%= link_to "Metis", "http://www.thisismetis.com/ruby-on-rails", target: "_blank" %>, thoughtbot’s web development immersive
-        bootcamp, focusing on Ruby on Rails, Javascript, HTML & CSS.</p>
-        <p>Over 8 years of experience in Marketing & Business Development.</p>
-        <p>Seasoned in managing cross-functional teams, client budgets and
-        schedules.</p>
-        <p>Full portfolios available at <%= link_to "github.com/mattkiernan", "github.com/mattkiernan", target: "_blank" %> &
-        <%= link_to "mattkiernan.com", root_path, target: "_blank" %></p>
+        <p>I'm a web developer because I love building things.</p>
+        <p>My most recent personal projects include a
+        <%= link_to "public relations CRM", "https://pitchfort.herokuapp.com/",
+          target:"_blank" %> and an <%= link_to "easy-to-use survey app",
+          "https://surveycat.herokuapp.com/", target:"_blank" %>.</p>
+          <p>I'm a recent graduate of <%= link_to "Metis", "http://www.thisismetis.com/ruby-on-rails", target:"_blank" %>, a web development bootcamp taught by
+          <%= link_to "thoughtbot", "http://www.thoughtbot.com", target:"_blank" %>.</p>
+        <p>I'm currently working on improving my tests and teaching myself
+        Ember.js.
+        <p>When I'm not building with code, I enjoy building scenes,
+        <%= link_to "performing improv", "http://instagram.com/p/nox-MxqRm2/",
+        target: "_blank" %>
+      <p>I also have over 8 years of marketing experience, with
+      <%= link_to "heavy expertise in user acquisition.",
+      "http://paymentweek.com/2013-11-12-exclusive-interview-levelup-matt-kiernan-2056/",
+      target:"_blank" %></p>
+      </td>
+    </tr>
+    <tr class="spacer">
+      <td></td>
+    </tr>
+    <tr class="section">
+      <td class="description">
+        <h6>Projects & Technical Skills</h6>
+      </td>
+      <td class="content">
+        <p>Here's a sample of my recent projects, built with <span class="bold">
+          Ruby on Rails & jquery, hosted on heroku and styled with CSS and the
+          <%= link_to "Neat framework", "http://neat.bourbon.io/",
+            target: "_blank" %>.</span></p>
+      <p><span class="project"><%= link_to "Pitchfort",
+        "http://pitchfort.herokuapp.com", target:"_none" %>:</span> A public relations CRM
+        using <span class="bold">Oauth 2 and the Gmail API</span>.
+        <p><span class="project"><%= link_to "SurveyCat",
+        "http://surveycat.herokuapp.com", target:"_blank" %>:</span> An easy-to-use survey tool
+        using <span class="bold">nested attributes.</span></p>
+        <p><span class="project"><%= link_to "Shoutr",
+          "https://aqueous-retreat-9817.herokuapp.com/", target:"_blank" %>
+    </span>: A basic micro-blogging app
+        featuring some <span class="bold">polymorphism.</span></p>
       </td>
     </tr>
     <tr class="spacer">
@@ -83,9 +120,6 @@
 
           <p>Executed all PR efforts, from story development to drafting releases
           and pitching the media.</p>
-          <p>Developed the <%= link_to "LevelUp blog",
-            "http://blog.thelevelup.com" %> as an inbound & content marketing /
-            lead generation tool.</p>
           <p>Established and executed CRM & marketing automation strategy for
           identifying new sales leads and ushering prospective clients through sales
           funnel via content marketing and email auto-responder drip campaigns.</p>
@@ -133,6 +167,10 @@
       </td>
       <td class="content">
         <table class="section-header">
+          <tr>
+            <td class="company"><%= link_to "Metis", "http://www.thisismetis.com/ruby-on-rails", target: "_blank" %> | Web Developer</td>
+            <td class="date">October 2014 - December 2014</td>
+          </tr>
           <tr>
             <td class="company"><%= link_to "Bentley University",
               "http://www.bentley.edu", target: "_blank" %> | Bachelor of Science, Marketing</td>
