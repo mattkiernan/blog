@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :users, only: [:new, :create]
   root "portfolios#show"
 
-  resources :posts
+  resources :posts, path: "blog"
 
   resource :portfolio, only: [:show]
 
