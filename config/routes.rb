@@ -9,6 +9,6 @@ Rails.application.routes.draw do
 
   resource :about, only: [:show]
 
-  resource :resume, only: [:show]
+  resource :resume, only: [:show, :edit]
 
 end
