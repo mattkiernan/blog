@@ -5,9 +5,11 @@ require File.expand_path('../application', __FILE__)
 Rails.application.initialize!
 
 if Rails.env.development?
-    Rails.logger = Le.new('89239e43-e535-4b91-be24-07dbfd84b7f1', debug: true)
+    Rails.logger = Le.new('ac2b35e4-72c5-4188-b4c7-86c37e9bff35', debug: true)
 else
-    Rails.logger = Le.new('89239e43-e535-4b91-be24-07dbfd84b7f1')
+    Rails.logger = Le.new('ac2b35e4-72c5-4188-b4c7-86c37e9bff35')
 end
 
-Rails.logger.info
+Rails.logger.info("This is info")
+Rails.logger.warn("This is a warning")
+Rails.logger.debug("This is debugging")
